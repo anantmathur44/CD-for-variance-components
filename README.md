@@ -1,7 +1,7 @@
 cdvc(y, X, V)
 
 Fitting a variance component model with zero-mean responses `y`, and 
-positive semi-definite matrices `I, V[2]`, ..., `V[end]`, and covariance `σ2[1]*I+σ2[2]*V[2]+ ...+σ2[end]*V[end]`. 
+positive semi-definite matrices `I, V[2]`, ..., `V[end]`, and covariance `γ[1]*I+γ[2]*V[2]+ ...+γ[end]*V[end]`. 
 
 # Arguments
 - `y`: n-by-1 response vector.  

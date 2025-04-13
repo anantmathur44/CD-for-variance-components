@@ -12,7 +12,7 @@ cdvc_wb(y, Z, V)
 
 # Fitting a variance component model with zero-mean responses `y`, and 
 # positive semi-definite matrices `I, V[2]`, ..., `V[end]`, and covariance 
-# `γ[1]*I + γ[2]*V[2] + ... + γ[end]*V[end]`.
+# `γ[1]*I + γ[2]*V[2] + ... + γ[end]*V[end]`. Where `V[i]=Z[i]*Z[i].T.
 # Suitable when has Z[i] has columns much less than n.
 
 # Arguments

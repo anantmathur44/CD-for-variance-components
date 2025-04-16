@@ -114,9 +114,6 @@ function cdvc_wb(
         Ωinv = inv(Ωchol)
         # update fixed effects
         mul!(storagen, Ωinv, y)
-        if !isposdef(storagepp)
-            storagepp += T(1e-3)I
-        end
         copy!(storagen, res)
         ldiv!(Ωchol.L, storagen)
         # check convergence

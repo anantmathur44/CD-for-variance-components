@@ -45,7 +45,6 @@ function cdvc_wb(
     maxiter::Integer = 5000, 
     funtol::Number = 1e-8,
     γ::Vector{T} = ones(T, length(V)),
-    algo::Symbol = :MM,
     low_rank::Bool = false,
     ) where T <: LinearAlgebra.BlasFloat
 
